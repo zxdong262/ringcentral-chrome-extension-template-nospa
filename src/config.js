@@ -124,6 +124,9 @@ export function thirdPartyServiceConfig(serviceName) {
   }
 
   // handle ringcentral event
+  // check https://github.com/zxdong262/pipedrive-embeddable-ringcentral-phone-nospa/blob/master/src/config.js
+  // as example
+  // read our document about third party features https://github.com/ringcentral/ringcentral-embeddable/blob/master/docs/third-party-service-in-widget.md
   let handleRCEvents = async e => {
     console.log(e)
     // let {data} = e
@@ -134,16 +137,13 @@ export function thirdPartyServiceConfig(serviceName) {
     //   return
     // }
     // let {type, loggedIn, path, call} = data
-    // if (type === 'rc-adapter-pushAdapterState') {
-    //   return initRCEvent()
-    // }
     // if (type ===  'rc-login-status-notify') {
     //   console.log(loggedIn, 'loggedIn')
     // }
     // if (
     //   type === 'rc-route-changed-notify' &&
     //   path === '/contacts' &&
-    //   !window.rc.local.apiKey
+    //   !window.rc.userAuthed
     // ) {
     //   showAuthBtn()
     // } else if (
@@ -256,6 +256,7 @@ export async function initThirdParty() {
 export function checkTab(tab) {
   return !!tab.url
   /** url check examples
+   * return /https:\/\/.+\.pipedrive.com\/.+/.test(tab.url)
     tab.url.startsWith('https://app.hubspot.com') &&
     !tab.url.startsWith('https://app.hubspot.com/login') &&
     !tab.url.startsWith('https://app.hubspot.com/myaccounts-beta') &&
