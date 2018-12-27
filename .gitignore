@@ -10,6 +10,7 @@
 /dist/*.js
 /dist/*.json
 /dist/*.map
+/dist/*.html
 /dist/images/
 package-lock.json
 /config.js

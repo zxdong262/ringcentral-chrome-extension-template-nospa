@@ -88,8 +88,8 @@ For now it is just a widget, you can call with it, to make all the features work
 
 To make it easier, we already set common modules to reduce developer efforts, you could set proper selectors, methods to make all features to work:
 
-- Edit [src/config.js](src/chrome-extension/config.js) to make all features to work.
-- Further more you can edit [src/manifest.json](src/manifest.json) to do more customization work.
+- Edit [src/content.js](src/content.js) to make all features to work.
+- Further more you can edit [src/manifest.json](src/manifest.json) or [src/background.js](src/background.js) to do more customization work.
 - And you can always read [Realworld examples](#realworld-examples) source code as examples.
 
 ## Credits
