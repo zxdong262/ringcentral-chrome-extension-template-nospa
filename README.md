@@ -32,14 +32,14 @@ RingCentral embeddable Chrome extension template for not single page app CRM sit
 
 | screenshots            |  screenshots |
 :-------------------------:|:-------------------------:
-![insightly-1](https://github.com/zxdong262/insightly-embeddable-ringcentral-phone/raw/master/screenshots/insightly-5.png) | ![insightly-1](https://github.com/zxdong262/insightly-embeddable-ringcentral-phone/raw/master/screenshots/insightly-4.png)
-![insightly-1](https://github.com/zxdong262/insightly-embeddable-ringcentral-phone/raw/master/screenshots/insightly-3.png) | ![insightly-1](https://github.com/zxdong262/insightly-embeddable-ringcentral-phone/raw/master/screenshots/insightly-2.png)
-![insightly-1](https://github.com/zxdong262/insightly-embeddable-ringcentral-phone/raw/master/screenshots/insightly-1.png) | ![x](https://github.com/zxdong262/hubspot-embeddable-ringcentral-phone/raw/master/screenshots/hs6.png)
-![x](https://github.com/zxdong262/hubspot-embeddable-ringcentral-phone/raw/master/screenshots/hs7.png) |  
+![insightly-1](https://github.com/ringcentral/insightly-embeddable-ringcentral-phone/raw/master/screenshots/insightly-5.png) | ![insightly-1](https://github.com/ringcentral/insightly-embeddable-ringcentral-phone/raw/master/screenshots/insightly-4.png)
+![insightly-1](https://github.com/ringcentral/insightly-embeddable-ringcentral-phone/raw/master/screenshots/insightly-3.png) | ![insightly-1](https://github.com/ringcentral/insightly-embeddable-ringcentral-phone/raw/master/screenshots/insightly-2.png)
+![insightly-1](https://github.com/ringcentral/insightly-embeddable-ringcentral-phone/raw/master/screenshots/insightly-1.png) | ![x](https://github.com/ringcentral/hubspot-embeddable-ringcentral-phone/raw/master/screenshots/hs6.png)
+![x](https://github.com/ringcentral/hubspot-embeddable-ringcentral-phone/raw/master/screenshots/hs7.png) |  
 
 ## Realworld examples
 
-- [redtail-embeddable-ringcentral-phone](https://github.com/zxdong262/redtail-embeddable-ringcentral-phone)
+- [redtail-embeddable-ringcentral-phone](https://github.com/ringcentral/redtail-embeddable-ringcentral-phone)
 
 ## Build and Use
 
