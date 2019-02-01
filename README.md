@@ -1,6 +1,6 @@
 # ringcentral-chrome-extension-template-nospa <!-- omit in toc -->
 
-RingCentral embeddable Chrome extension template for not single page app CRM site.
+RingCentral embeddable Chrome/Firefox extension template for not single page app CRM site.
 
 ## Table of Contents <!-- omit in toc -->
 
