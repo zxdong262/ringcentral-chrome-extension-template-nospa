@@ -69,7 +69,7 @@ var config = {
     manifest: './src/manifest.json',
     '../dist-firefox/content': './src/content.js',
     '../dist-firefox/background': './src/background.js',
-    '../dist-firefox/standalone': './node_modules/ringcentral-embeddable-extension-common/src/app/standalone.pug',
+    '../dist-firefox/standalone': './node_modules/ringcentral-embeddable-extension-common/src/app/standalone-firefox.pug',
     '../dist-firefox/app': './node_modules/ringcentral-embeddable-extension-common/src/app/app.js',
     '../dist-firefox/manifest': './src/manifest-firefox.json'
   },
@@ -143,12 +143,22 @@ var config = {
       },
       {
         test: /\.(png|jpg|svg)$/,
-        use: ['url-loader?limit=10192&name=images/[hash].[ext]']
+        use: ['url-loader?limit=101920&name=images/[hash].[ext]']
       },
       {
-        test: /\.pug$/,
+        test: /standalone\.pug$/,
         use: [
           'file-loader?name=./standalone.html',
+          'concat-loader',
+          'extract-loader',
+          'html-loader',
+          pug
+        ]
+      },
+      {
+        test: /standalone-firefox\.pug$/,
+        use: [
+          'file-loader?name=../dist-firefox/standalone.html',
           'concat-loader',
           'extract-loader',
           'html-loader',
