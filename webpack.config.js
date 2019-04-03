@@ -36,10 +36,13 @@ let {
   clientID,
   appServer
 } = sysConfigDefault.ringCentralConfigs
+let {
+  serviceName
+} = sysConfigDefault.thirdPartyConfigs
 
 let appConfigQuery = ''
 if (clientID || appServer) {
-  appConfigQuery = `?appKey=${clientID}&appServer=${encodeURIComponent(appServer)}`
+  appConfigQuery = `?prefix=${serviceName}-rc&newAdapterUI=1&userAgent=${serviceName}_extension%2F${pack.version}&disableActiveCallControl=false&appKey=${clientID}&appServer=${encodeURIComponent(appServer)}`
 }
 
 const {version} = pack
