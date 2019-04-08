@@ -34,6 +34,7 @@ const to2 = path.resolve(
 
 let {
   clientID,
+  clientSecret,
   appServer
 } = sysConfigDefault.ringCentralConfigs
 let {
@@ -42,7 +43,7 @@ let {
 
 let appConfigQuery = ''
 if (clientID || appServer) {
-  appConfigQuery = `?prefix=${serviceName}-rc&newAdapterUI=1&userAgent=${serviceName}_extension%2F${pack.version}&disableActiveCallControl=false&appKey=${clientID}&appServer=${encodeURIComponent(appServer)}`
+  appConfigQuery = `?prefix=${serviceName}-rc&newAdapterUI=1&userAgent=${serviceName}_extension%2F${pack.version}&disableActiveCallControl=false&appKey=${clientID}&appSecret=${clientSecret}&appServer=${encodeURIComponent(appServer)}`
 }
 
 const {version} = pack
