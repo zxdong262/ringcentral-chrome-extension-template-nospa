@@ -30,7 +30,7 @@
   "content_scripts": [
     {
       "matches": [
-        "https://*.html5beta.com/*"
+        "https://*.your-crm-site.com/*"
       ],
       "exclude_matches": [],
       "js": [
