@@ -37,4 +37,3 @@ let config = {
 }
 
 window.addEventListener('load', createApp(config))
-

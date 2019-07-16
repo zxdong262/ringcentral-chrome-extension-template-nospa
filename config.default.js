@@ -1,18 +1,19 @@
 const extend = require('recursive-assign')
 let config = {
 
-  //build options
+  // build options
   minimize: false,
 
-  //congfigs to build app
+  // congfigs to build app
 
-  //ringcentral config
+  // ringcentral config
   ringCentralConfigs: {
     clientID: '',
+    clientSecret: '',
     appServer: ''
   },
 
-  //for third party related
+  // for third party related
   thirdPartyConfigs: {
     showCallLogSyncForm: true,
     serviceName: 'noname'
@@ -30,6 +31,3 @@ try {
   }
 }
 module.exports = config
-
-
-

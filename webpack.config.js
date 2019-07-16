@@ -7,7 +7,7 @@ const LodashModuleReplacementPlugin = require('lodash-webpack-plugin')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
 const pack = require('./package.json')
 
-const stylusSettingPlugin =  new webpack.LoaderOptionsPlugin({
+const stylusSettingPlugin = new webpack.LoaderOptionsPlugin({
   test: /\.styl$/,
   stylus: {
     preferPathResolver: 'webpack'
@@ -42,7 +42,7 @@ if (clientID || appServer) {
   appConfigQuery = `?clientID=${clientID}&appServer=${encodeURIComponent(appServer)}`
 }
 
-const {version} = pack
+const { version } = pack
 
 const pug = {
   loader: 'pug-html-loader',
@@ -57,7 +57,6 @@ const pug = {
     }
   }
 }
-
 
 var config = {
   mode: 'production',
@@ -74,7 +73,7 @@ var config = {
     '../dist-firefox/manifest': './src/manifest-firefox.json'
   },
   output: {
-    path: __dirname + '/dist',
+    path: path.resolve(__dirname, 'dist'),
     filename: '[name].js',
     publicPath: '/',
     chunkFilename: '[name].[hash].js',
@@ -192,4 +191,3 @@ var config = {
 }
 
 module.exports = config
-
